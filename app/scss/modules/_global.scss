@@ -1,0 +1,115 @@
+/* Container */
+
+.container{
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.owl-item-inner{
+	margin-left: auto;
+	margin-right:auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1200px;
+}
+
+
+// page
+.page{
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+}
+
+/* row */
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.col-4{
+	position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+	@media(min-width: 768px) {
+	    flex: 0 0 33.33333%;
+		max-width: 33.33333%;
+		padding-left: 15px;
+		padding-right: 15px;
+    }
+
+}
+
+
+.col-6{
+	position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    	@media(min-width: 768px){
+    		flex: 0 0 50%;
+    		max-width: 50%;
+    		padding-left: 15px;
+    		padding-right: 15px;
+    	}
+}
+
+
+.col-3{
+	position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    @media(min-width: 545px){
+    		flex: 0 0 50%;
+    		max-width: 50%;
+    		padding-left: 15px;
+    		padding-right: 15px;
+    	}
+    	 @media(min-width: 992px){
+    		flex: 0 0 25%;
+    		max-width: 25%;
+    		padding-left: 15px;
+    		padding-right: 15px;
+    	}
+}
+
+/* default styles */
+
+.py-100{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	@media(min-width: 992px){
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+}
+
+.invert-clr *{
+	color: transparent;
+}
+
+.mt-20{
+	margin-top: 20px;
+}
+.mb-30{
+	margin-bottom: 30px;
+}
+
+.mb-0{
+	margin-bottom: 0;
+}
+
+// helpers
+

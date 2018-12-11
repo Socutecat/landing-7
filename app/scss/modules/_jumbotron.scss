@@ -1,0 +1,50 @@
+/* Jumbotron styles */
+.jumbotron{
+	background-image:url(../img/layer10.png);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	overflow: auto;
+	text-align: center;
+}
+
+.jumbotron-title{
+	font-size: 25px;
+	@media(min-width: 768px){
+		font-size: 48px;
+	}
+	line-height:24px;
+	color: $white;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+}
+.jumbotron-subtitle{
+	margin-top: 34px;
+	font-size: 16px;
+	@media(min-width: 768px){
+		font-size: 20px;
+	}
+	color: $white;
+	margin-bottom: 56px;
+}
+
+.jumbotron-link{
+	display: inline-block;
+	text-align: center;
+	border: 2px solid $white;
+	padding: 11px 40px;
+	color: $white;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all .3s ease-in;
+	margin-top: auto;
+	&:hover{
+		border:2px solid $white;
+		color: $dark-100;
+		}
+	}
+

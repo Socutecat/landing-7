@@ -1,0 +1,48 @@
+/* header style */
+
+.main-header{
+	padding-top: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	.header-inner{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		@media(min-width: 768px){
+			justify-content: space-between;
+			flex-direction: row;
+		}
+		.site-navigation{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			@media(min-width: 768px){
+				flex-direction: row;
+			}
+			li{
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 400;
+				color:$white;
+				transition: .2s ease;
+				font-size: 15px;
+				line-height: 24px;
+				cursor: pointer;
+				&:hover{
+					color:$dark-100;
+				}
+			}
+			li+li{
+				padding-left: 0px;
+			}
+			@media(min-width: 768px){
+				li+li{
+				padding-left: 36px;
+			}
+			}
+		}
+	}
+}

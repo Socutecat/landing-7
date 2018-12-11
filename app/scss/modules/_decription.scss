@@ -1,0 +1,118 @@
+.section-title-description{
+	text-align: center;
+	position: relative;
+	text-transform: uppercase;
+	&::before{
+		content: '';
+		position: absolute;
+		width: 50px;
+		height: 2px;
+		background-color: #555555;
+		bottom: -31px;
+		margin-left: 90px;
+	}
+}
+.section-subtitle-description{
+	margin-top: 66px;
+	text-align: center;
+}
+
+.main-content-wrap {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-top: 75px;
+	flex-direction: column;
+	@media(min-width: 768px) {
+			flex-direction: row;
+		}
+	.avatar-description{
+		flex-basis: 41.66%;
+		padding-bottom: 30px;
+		@media(min-width: 768px) {
+			padding-bottom: 77px;
+		}
+	}
+	.avatar-description-second {
+		flex-basis: 41.66%;
+		padding-bottom: 30px;
+			@media(min-width: 768px) {
+				padding-bottom: 77px;
+		}
+		@media(min-width: 992px) {
+				padding-bottom: 0;
+		}
+	}
+		.content-description{
+		flex-basis: 58.34%;
+		padding-left: 0;
+		@media(min-width: 768px){
+			padding-left: 39px;
+		}
+		padding-bottom: 50px;
+		@media(min-width: 992px){
+			padding-left: 35px;
+			padding-bottom: 0;
+		}
+		.content-inner-wrap {
+				display: flex;
+				flex-direction: row;
+				.data-description{
+					width: 75px;
+					height: 75px;
+					min-width: 75px;
+					min-height: 75px;
+					background-color: $white;
+					border: 2px solid #555555;
+					display: flex;
+					align-items: center;
+					flex-direction: column;
+					justify-content: center;
+					text-transform: uppercase;
+					h5{
+						font-family: 'Montserrat', sans-serif;
+						font-weight: 700;
+						font-size: 20px;
+					}
+					p {
+						font-family: 'Montserrat', sans-serif;
+						font-weight: 700;
+						font-size: 14px;
+					}
+				}
+				.title-description{
+					margin-left: 32px;
+					h4 {
+						font-size: 16px;
+					}
+					span {
+						font-size: 13px;
+						font-style: italic;
+					}
+				}
+			}
+		.content-description-text {
+			margin-top: 25px;
+		}
+		.btn-custom {
+			font-family: 'Roboto Slab', serif;
+			font-weight: 700;
+			text-decoration: none;
+			color: $dark-50;
+			font-size: 13px;
+			line-height: 24px;
+			transition: .5s ease;
+			display: inline-block;
+			margin-top: 10px;
+			@media(min-width: 768px) {
+			margin-top: 29px;
+		}
+			&:hover {
+				transition: .3s ease;
+				color: $red;
+			}
+		}
+	}
+}
+

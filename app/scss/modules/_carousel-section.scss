@@ -1,0 +1,206 @@
+// // style section carousel
+// .background-dark-150{
+// 	background-color:$dark-150;
+// 		.row{
+// 			margin-top: 77px;
+// 				.team-member{
+// 					text-align: center;
+// 					.image-block{
+// 						display: flex;
+// 						position: relative;
+// 						overflow: hidden;
+// 						flex-direction: column;
+// 						cursor: pointer;
+// 							.overlay{
+// 								position: absolute;
+// 								top: 0;
+// 								left: 0;
+// 								bottom: 0;
+// 								right: 0;
+// 								background-color: rgba(85,85,85, .51);
+// 								display: none;
+// 									.member-navigation{
+// 										display: flex;
+// 										justify-content: center;
+// 										align-items: center;
+// 										margin-top: 190px;
+// 										.active{
+// 											width: 29px;
+// 											height: 29px;
+// 											background-color: $red;
+// 											display: flex;
+// 											align-items: center;
+// 											justify-content: center;
+// 										}
+// 										.fa{
+// 											color: $white;
+// 											text-decoration: none;
+// 											margin-right:15px;
+// 											&:last-of-type{
+// 												margin-right: 0;
+// 											}
+// 										}
+// 									}
+// 							}
+// 					}
+// 					.image-block:hover .overlay{
+// 						transition: all 5s ease;
+// 						display: block;
+// 					}
+// 					h3{
+// 						font-size: 16px;
+// 						margin: 20px 0 10px;
+// 					}
+// 					h5{
+// 						font-family: 'Roboto Slab', serif;
+// 						font-size: 13px;
+// 						font-weight: 400;
+// 					}
+// 				}
+// 			}
+// 		}
+
+
+
+
+// style section caroisel
+
+.background-dark-150{
+	background-color: $dark-150;
+	.col-6{
+		margin-bottom: 25px;
+		@media(min-width: 768px){
+			margin-bottom: 0;
+		}
+	}
+}
+					h3{font-size: 16px;
+						margin: 20px 0 10px;}
+						h5{
+						font-family: 'Roboto Slab', serif;
+						font-size: 13px;
+						font-weight: 400; 					}
+.item{
+	min-width: 100%;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+	text-align: center;
+	&:hover .overlay{
+		opacity: 1;
+		visibility: visible;
+	}
+					h3{
+						font-size: 16px;
+						margin: 20px 0 10px;
+					}
+					h5{
+						font-family: 'Roboto Slab', serif;
+						font-size: 13px;
+						font-weight: 400;
+					}
+	.overlay{
+		position: absolute;
+		top: 0;
+		left: 15px;
+		right: 15px;
+		bottom: 75px;
+		background-color: rgba(85,85,85, .51);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0;
+		visibility: hidden;
+		transition: .5s ease-in-out;
+		.member-navigation{
+			display: flex;
+			margin-top: 130px;
+			margin-left: auto;
+			margin-right: auto;
+			align-items: center;
+			.fa{
+				margin-right: 15px;
+				text-decoration: none;
+				color: $white;
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+			.active{
+				width: 28px;
+				height: 28px;
+				background-color: $red;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	}
+}
+
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next{
+
+	position:absolute;
+	top: 35%;
+}
+.owl-carousel .owl-nav button.owl-prev{
+	left:0;
+	width: 35px;
+	height: 35px;
+	background-color:#5555;
+	position: absolute;
+	z-index:1;
+	outline-color: transparent;
+	span{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.owl-carousel .owl-nav button.owl-next{
+	right:0;
+	width: 35px;
+	height: 35px;
+	background-color: #5555;
+	position: absolute;
+	z-index:1;
+	outline-color: transparent;
+	span{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+.owl-carousel .owl-nav button.owl-prev::before{
+	content: '\f104';
+	font-family: 'FontAwesome';
+	left: 12px;
+	font-size: 30px;
+	position: absolute;
+	z-index: 1;
+	color: $white;
+}
+
+
+.owl-carousel .owl-nav button.owl-next::before{
+	content: '\f105';
+	left: 12px;
+	font-family: 'FontAwesome';
+	font-size: 30px;
+	position: absolute;
+	z-index: 1;
+	color: $white;
+}
+
+.owl-carousel:hover .owl-nav button.owl-next{
+		background-color: $red;
+		transition: .2s ease-in;
+		transition-delay: 1s;
+			}
+.owl-carousel:hover .owl-nav button.owl-prev{
+		background-color: $red;
+		transition: .2s ease-in;
+		transition-delay:.5s;
+			}

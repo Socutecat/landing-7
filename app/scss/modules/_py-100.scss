@@ -1,0 +1,63 @@
+/* start services style */
+.section-title {
+    text-align: center;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        background-color: $dark-50;
+        top: 45px;
+        margin-left: 20px;
+    }
+}
+.section-subtitle {
+        margin-top: 66px;
+        text-align: center;
+    }
+
+.py-100 {
+	.row{
+		margin-top:75px;
+		 .col-4 {
+		 	margin-bottom: 30px;
+		 	&:last-child{
+		 		margin-bottom: 0;
+		 	}
+		 	@media(min-width: 768px){
+		 		margin-bottom: 0;
+		 	}
+	        .custom-inner {
+	            width: 90px;
+	            height: 90px;
+	            border-radius: 50%;
+				background-color: $red;
+				margin-left: auto;
+				margin-right: auto;
+					i {
+	                line-height: 90px;
+	                font-size: 40px;
+	                text-align: center;
+	                display: block;
+	                color: $white;
+	            }
+	        }
+	        .custom-description{
+	        	text-align: center;
+	        	margin-top: 30px;
+	        	.custom-title{
+				font-size: 14px;
+	        }
+	        .custom-subtitle{
+				font-size: 14px;
+				padding-top: 25px;
+				display: inline-block;
+	        	}
+	        }
+
+    }
+	}
+
+}
