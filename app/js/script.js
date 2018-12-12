@@ -87,8 +87,26 @@ $('.filter-button-group').on('click', 'button', function(){
 })
 }
 
+function to_top(){
+	var btn = $ ('.totop-button');
+		$(window).scroll (function(){
+			if ($(window).scrollTop() > 300){
+				btn.addClass('show');
+			}
+			else{
+				btn.removeClass('show');
+			}
+		});
+
+		btn.on('click', function(e) {
+				e.preventDefault();
+				$('html, body').animate({scrollTop:0}, '300');
+		});
+}
+
 $(document).ready(function(){
 	carousel_init();
 	carousel_init_2();
 	isotope_init();
+	to_top();
 });

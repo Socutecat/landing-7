@@ -3832,4 +3832,28 @@ blockquote {
     text-align: center;
     margin-top: 30px; }
 
+.totop-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid #c6c6c6;
+  z-index: 1000;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 3px;
+  opacity: 0;
+  visibility: hidden; }
+
+.totop-button:hover {
+  cursor: pointer;
+  border-bottom-color: #111; }
+
+.totop-button.show {
+  opacity: 1;
+  visibility: visible; }
+
 /*# sourceMappingURL=style.css.map */
