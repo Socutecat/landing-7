@@ -3618,11 +3618,13 @@ blockquote {
       margin-top: 75px; } }
   .contact-form-wrapper .left-block {
     -ms-flex-preferred-size: 100%;
-    flex-basis: 100%; }
-    @media (min-width: 768px) {
+    flex-basis: 100%;
+    margin-bottom: 30px; }
+    @media (min-width: 992px) {
       .contact-form-wrapper .left-block {
         -ms-flex-preferred-size: 23.68%;
-        flex-basis: 23.68%; } }
+        flex-basis: 23.68%;
+        margin-bottom: 0; } }
     .contact-form-wrapper .left-block .contact-item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3657,7 +3659,7 @@ blockquote {
     flex-basis: 100%;
     width: 100%;
     margin-left: 0; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .contact-form-wrapper .right-block {
         -ms-flex-preferred-size: 76.32%;
         flex-basis: 76.32%; } }

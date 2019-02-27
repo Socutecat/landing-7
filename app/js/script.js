@@ -56,6 +56,7 @@ function carousel_init_2() {
 		nav: false,
 		loop: true,
 		dots: true,
+		autoplay: true,
 		responsiveClass: true,
 		responsive: {
         0:{
